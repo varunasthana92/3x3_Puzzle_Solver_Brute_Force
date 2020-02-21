@@ -57,6 +57,32 @@ def main():
     finalState= np.array([1,2,3,4,5,6,7,8,0])
     parentState= init.reshape(-1)
 
+    # code block to check if the given input state is solvable or not
+    inv_count = 0
+    for i in range(8):
+        j= i+1
+        while(j<9):
+            if(parentState[j] and parentState[i] and parentState[i]>parentState[j]):
+                inv_count+=1
+            j+=1
+    if(inv_count%2):
+        print('UNSOLVABLE')
+        return
+
+    # initializing first node data as initital state with own id and parent id both as 0
+    parentNode= Node(parentState,0)
+
+    # appending the first node into allNodes data set
+    graph.push(parentNode)
+    found= False
+
+    # check if initial state is same as final state
+    compare= parentState == finalState
+    if(compare.all()):
+        found =True
+        print('Input state is same as goal state')
+        return
+
 if __name__ == '__main__':
     # calling main function
     main()
