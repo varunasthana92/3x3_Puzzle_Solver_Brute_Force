@@ -7,3 +7,11 @@ def action(zeroPos):
           6: np.array([3,7]), 7: np.array([4,6,8]), 8: np.array([5,7]),
          }
     return actions[zeroPos]
+
+# Node class to store data of Node's state, ownID and parentID
+class Node():
+    # Initialize class object
+    def __init__(self, stateData, oID):
+        self.state= stateData
+        self.pID= 0
+        self.ownID= oID
