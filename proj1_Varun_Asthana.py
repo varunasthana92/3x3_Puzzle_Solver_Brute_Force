@@ -15,3 +15,14 @@ class Node():
         self.state= stateData
         self.pID= 0
         self.ownID= oID
+
+# allNodes class to store data of each object of class Node
+class allNodes():
+    # Initialize class object
+    def __init__(self):
+        self.allNodesData=[]
+    
+    # Function to add new unique node in the Nodes data set
+    def push(self,nodeData):
+        tempData= cp.deepcopy(nodeData)                      
+        self.allNodesData.append(tempData)
