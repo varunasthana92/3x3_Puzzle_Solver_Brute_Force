@@ -21,6 +21,14 @@ class allNodes():
     # Initialize class object
     def __init__(self):
         self.allNodesData=[]
+
+    # Function to check if new obtained state is unique or not
+    def unique(self, state):
+        for node in self.allNodesData:
+            comp = state == node.state
+            if(comp.all()):
+                return -1
+        return len(self.allNodesData)
     
     # Function to add new unique node in the Nodes data set
     def push(self,nodeData):
