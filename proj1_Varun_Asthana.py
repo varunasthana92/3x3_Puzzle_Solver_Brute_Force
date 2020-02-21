@@ -34,3 +34,29 @@ class allNodes():
     def push(self,nodeData):
         tempData= cp.deepcopy(nodeData)                      
         self.allNodesData.append(tempData)
+
+
+def main():
+    # graph object created for allNodes class
+    graph= allNodes()
+    print('Enter the initial state ROW-WISE top to bottom (separated by commas): ')
+    init= np.array(input())
+
+    # Check if input data is correct
+    if(len(init)!=9):
+        print 'Wrong input'
+        print 'Terminating'
+        return
+    for i in init:
+        if(i>8 and i<0):
+            print 'Wrong input'
+            print 'Terminating'
+            return
+
+    # goal state defiend as finalState
+    finalState= np.array([1,2,3,4,5,6,7,8,0])
+    parentState= init.reshape(-1)
+
+if __name__ == '__main__':
+    # calling main function
+    main()
