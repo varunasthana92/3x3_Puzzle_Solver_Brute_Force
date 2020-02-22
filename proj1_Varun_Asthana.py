@@ -1,4 +1,5 @@
 import numpy as np
+import copy as cp
 
 # defining all possible action set for each position of blank tile
 def action(zeroPos):
@@ -149,6 +150,37 @@ def main():
         idx+=1
     nodes.close()
 
+    # back-tracking for the shortest path and appending the path in result
+    ans= graph.getNode(len(graph.allNodesData)-1)
+    result=[]
+    results_ownId=[]
+    results_pId= []
+    while(ans.ownID!=0):
+        result.append(ans.state)
+        results_ownId.append(ans.ownID)
+        results_pId.append(ans.pID)
+        ans=graph.getNode(ans.pID)
+
+    result.append(graph.getNode(0).state)
+    results_ownId.append(graph.getNode(0).ownID)
+    results_pId.append(graph.getNode(0).pID)
+
+    nodePath= open("nodePath.txt", 'w')
+    i= len(result)-1
+    while(i>=0):
+        data= result[i].reshape(3,3)
+        data= data.transpose()
+        data= data.reshape(-1)
+        content= str(data[0]) + " " + str(data[1]) + " " + str(data[2]) + " "
+        content+= str(data[3]) + " " + str(data[4]) + " " + str(data[5]) + " "
+        content+= str(data[6]) + " " + str(data[7]) + " " + str(data[8]) + "\n"
+        nodePath.write(content)
+        i-=1
+    nodePath.close()
+    NodesInfo.close()
+    print 'Total no. of steps = ', len(result)-1
+    return
+    
 if __name__ == '__main__':
     # calling main function
     main()
