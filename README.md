@@ -14,7 +14,7 @@ copy
 Open ternimal and run the below commands
 ```
 $ git clone https://github.com/varunasthana92/ENPM661_Project1.git
-$ cd cd ENPM661_Project1
+$ cd ENPM661_Project1
 $ python proj1_Varun_Asthana.py
 ```
 
