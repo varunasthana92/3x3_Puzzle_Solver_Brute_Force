@@ -19,7 +19,7 @@ $ python proj1_Varun_Asthana.py
 ```
 
 Program will prompt the user to Enter the initial state of the puzzle ROW-WISE. Data to be provided from 1st row tll last row separated by commas.
-(Blank tile is denoted by number 0)
+(State data will be from 0 till 8 in integer format. Blank tile is denoted by number 0)
 
 Example of input: 1,2,3,4,5,0,7,8,6
 
