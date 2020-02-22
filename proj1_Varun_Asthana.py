@@ -52,8 +52,8 @@ def main():
         print 'Wrong input'
         print 'Terminating'
         return
-    for i in init:
-        if(i>8 and i<0):
+    for i in range(len(init)):
+        if(init[i]>8 or init[i]<0):
             print 'Wrong input'
             print 'Terminating'
             return
