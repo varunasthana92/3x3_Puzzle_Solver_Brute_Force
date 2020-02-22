@@ -11,6 +11,8 @@ numpy
 copy
 
 ## How to run
+Note: Program file to be run in pythn2.7 and output visualization in python3.5. Respective commands for both are provided below.
+
 Open ternimal and run the below commands
 ```
 $ git clone https://github.com/varunasthana92/ENPM661_Project1.git
