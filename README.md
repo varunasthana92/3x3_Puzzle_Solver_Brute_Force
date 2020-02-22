@@ -11,7 +11,7 @@ numpy
 copy
 
 ## How to run
-Note: Program file to be run in pythn2.7 and output visualization in python3.5. Respective commands for both are provided below.
+Note: Program file to be run in python2.7 and output visualization in python3.5. Respective commands for both are provided below.
 
 Open ternimal and run the below commands
 ```
