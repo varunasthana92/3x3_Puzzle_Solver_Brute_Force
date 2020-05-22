@@ -1,23 +1,17 @@
-# ENPM661_Project1
+# 3x3_Puzzle_Solver_Brute_Force
 
 ## Dependencies
 Python2.7
-
 Python3.5
 
-## Libraries needed
-numpy
-
-copy
-
 ## How to run
-Note: Program file to be run in python2.7 and output visualization in python3.5. Respective commands for both are provided below.
+__Note:__ Code file to be run in python2.7 and output visualization in python3.5. Respective commands for both are provided below.
 
 Open ternimal and run the below commands
 ```
-$ git clone https://github.com/varunasthana92/ENPM661_Project1.git
-$ cd ENPM661_Project1
-$ python proj1_Varun_Asthana.py
+$ git clone https://github.com/varunasthana92/3x3_Puzzle_Solver_Brute_Force.git
+$ cd 3x3_Puzzle_Solver_Brute_Force
+$ python solve.py
 ```
 
 Program will prompt the user to Enter the initial state of the puzzle ROW-WISE. Data to be provided from 1st row tll last row separated by commas.
