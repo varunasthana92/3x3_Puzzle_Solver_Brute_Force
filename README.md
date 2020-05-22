@@ -2,6 +2,7 @@
 
 ## Dependencies
 Python2.7
+
 Python3.5
 
 ## How to run
@@ -11,7 +12,7 @@ Open ternimal and run the below commands
 ```
 $ git clone https://github.com/varunasthana92/3x3_Puzzle_Solver_Brute_Force.git
 $ cd 3x3_Puzzle_Solver_Brute_Force
-$ python solve.py
+$ python2 solve.py
 ```
 
 Program will prompt the user to Enter the initial state of the puzzle ROW-WISE. Data to be provided from 1st row tll last row separated by commas.
